@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+} */
+input {
+  border: 1px solid rgb(0, 119, 255);
+  padding: 10px;
+  width: 75%;
+  /* float: left; */
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background-color: #d9d9d9;
+  color: #555;
+  /* float: left; */
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+ul {
+  /* border: 2px solid red; */
+  width: 80%;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background-color: lavenderblush;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+/* Set all odd list items to a different color(zebra-stripes)*/
+
+ul li:nth-child(odd) {
+  background-color: pink;
+}
+
+ul li:hover {
+  background-color: rgba(171, 43, 226, 0.466);
+}
+
+/*Add acheched mark when clicked on*/
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  height: 15px;
+  width: 7px;
+  transform: rotate(45deg);
+}
+
+/*Style the close button*/
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  font-size: 20px;
+}
+
+.close:hover {
+  background-color: fuchsia;
+  color: white;
+}
+
+.header {
+  background-color: rgba(255, 192, 203, 0.289);
+  padding: 30px 40px;
+  color: rgba(128, 0, 128, 0.712);
+  text-align: center;
+  width: 50%;
+}
